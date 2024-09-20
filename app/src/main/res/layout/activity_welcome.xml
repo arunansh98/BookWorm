@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/welcome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:id="@+id/wel"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#575151"
+        android:layout_marginTop="300dp"
+        android:textSize="60sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/wel"
+        android:id="@+id/newUsers"
+        android:layout_centerHorizontal="true"
+        android:text="New User?"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signup1"
+        android:layout_below="@id/newUsers"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#225EF5"
+        fancy:fb_focusColor="#94A2E9"
+        fancy:fb_iconPosition="left"
+        fancy:fb_text="SIGN UP"
+        fancy:fb_textColor="#FFFFFF" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/signup"
+        android:id="@+id/oldUsers"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account?"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/oldUsers"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:onClick="signin"
+        android:paddingRight="40dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#000"
+        fancy:fb_focusColor="#798077"
+        fancy:fb_iconPosition="left"
+        fancy:fb_text="SIGN IN"
+        fancy:fb_textColor="#FFFFFF" />
+
+
+</RelativeLayout>

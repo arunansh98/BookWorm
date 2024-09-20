@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllBookFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="563dp"
+            android:layout_above="@+id/issueAll"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-39dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/issueAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:tag="1"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#0AD317"
+            fancy:fb_focusColor="#93FF5A"
+            fancy:fb_iconPosition="left"
+            fancy:fb_text="Confirm Requested list"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/empty"
+            android:layout_width="340dp"
+            android:layout_height="273dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/empty" />
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty"
+            android:layout_centerHorizontal="true"
+            android:text="Your list is empty"
+            android:textColor="#FFB700"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

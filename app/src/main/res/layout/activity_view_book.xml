@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bookCover"
+        android:transitionName="@string/myImage"
+        android:src="@drawable/loading"
+
+        />
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:id="@+id/loadingCover"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookTitle"
+        android:layout_below="@+id/bookCover"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:text="Book Name"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author"
+        android:layout_below="@id/bookTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#0074F0"
+        android:layout_marginTop="20dp"
+        android:text="By Author Name"/>
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/issueButton"
+        android:layout_width="wrap_content"
+        android:onClick="issue"
+        android:tag="1"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#0AD317"
+        fancy:fb_focusColor="#93FF5A"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Issue Book"
+        fancy:fb_textSize= "16sp"
+        fancy:fb_textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:text="Description"
+        android:textColor="#0E7AFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:layout_below="@+id/author"
+        android:layout_marginTop="80dp"
+        android:textSize="16sp"
+        android:ellipsize="none"
+        android:layout_above="@+id/issueButton"
+        android:scrollHorizontally="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>

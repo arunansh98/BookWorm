@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/removeBook"
+            android:src="@mipmap/close"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/recycle_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="3dp"
+            android:src="@drawable/book" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_toLeftOf="@+id/removeBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/recycle_image"
+            android:text="Book Name"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/authorName"
+            android:textSize="13sp"
+            android:layout_below="@+id/name"
+            android:text="Author Name"
+            android:textColor="#1100FD"
+            android:layout_toRightOf="@+id/recycle_image"/>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

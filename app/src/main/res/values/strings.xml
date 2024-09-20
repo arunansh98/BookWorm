@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BookWorm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_user">Profile</string>
+    <string name="nav_issue">Your Issues</string>
+    <string name="nav_all">Explore</string>
+    <string name="myImage">myImage</string>
+    <string name="desc">"Big Data is one of the most popular buzzwords in technology industry today. Organizations worldwide have realized the value of the immense volume of data available and are trying their best to manage, analyse and unleash the power of data to build strategies and develop a competitive edge. At the same time, the advent of the technology has led to the evolution of a variety of new and enhanced job roles. The objective of this book is to create a new breed of versatile Big Data analysts and developers, who are thoroughly conversant with the basic and advanced analytic techniques for manipulating and analysing data."</string>
+</resources>
